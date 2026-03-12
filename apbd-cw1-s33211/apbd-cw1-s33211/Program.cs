@@ -24,7 +24,7 @@ class Program
 
             Console.WriteLine("Liczby: " + string.Join(", ", liczby));
             
-            Console.WriteLine("Średnia i największa liczba z podanej listy: " + StatisticsHelper.CalculateAverage(liczby) + ", " + StatisticsHelper.Max(liczby));
+            Console.WriteLine("Statystyki listy: Średnia - " + StatisticsHelper.CalculateAverage(liczby) + ", Największa wartość" + StatisticsHelper.Max(liczby));
         }
         catch (FormatException)
         {
