@@ -11,6 +11,7 @@
          liczby[i] = int.Parse(parts[i]);
      }
      
+     Console.WriteLine("Liczby: " + string.Join(", ", liczby));
      
     }
 }
