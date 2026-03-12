@@ -15,16 +15,16 @@ class Program
             }
 
             string[] parts = input.Split(' ');
-            int[] liczbyArray = new int[parts.Length];
+            int[] liczbyTabela = new int[parts.Length];
 
             for (int i = 0; i < parts.Length; i++)
             {
-                liczbyArray[i] = int.Parse(parts[i]);
+                liczbyTabela[i] = int.Parse(parts[i]);
             }
 
-            Console.WriteLine("Liczby: " + string.Join(", ", liczbyArray));
+            Console.WriteLine("Liczby: " + string.Join(", ", liczbyTabela));
             
-            Console.WriteLine("Statystyki listy: Średnia - " + StatisticsHelper.CalculateAverage(liczbyArray) + ", Największa wartość" + StatisticsHelper.Max(liczbyArray));
+            Console.WriteLine("Statystyki listy: Średnia - " + StatisticsHelper.CalculateAverage(liczbyTabela) + ", Największa wartość" + StatisticsHelper.Max(liczbyTabela));
         }
         catch (FormatException)
         {
