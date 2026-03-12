@@ -1,4 +1,6 @@
-﻿class Program
+﻿using apbd_cw1_s33211;
+
+class Program
 {
     static void Main(string[] args) 
     {
@@ -21,6 +23,8 @@
             }
 
             Console.WriteLine("Liczby: " + string.Join(", ", liczby));
+            
+            Console.WriteLine("Średnia i największa liczba z podanej listy: " + StatisticsHelper.CalculateAverage(liczby) + ", " + StatisticsHelper.Max(liczby));
         }
         catch (FormatException)
         {
